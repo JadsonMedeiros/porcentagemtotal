@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bo6-WQ-24a">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Porcentagem Total-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="porcentagemtotal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-fd-GAS">
+                                <rect key="frame" x="-5" y="64" width="331" height="87"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-Nl-q81">
+                                <rect key="frame" x="16" y="263" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UUS-Nl-q81" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="wV3-JC-f4U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="X% de Y">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFZ-DW-6dP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybR-GD-4KG">
+                                <rect key="frame" x="170" y="413" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ybR-GD-4KG" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="goN-OJ-Oj9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="X menos Y%">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Mj-QL-mVa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-Nc-9Ij">
+                                <rect key="frame" x="170" y="363" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tdy-Nc-9Ij" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="jMh-E0-n1x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Troca %">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2a-tj-Qyq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQW-gr-eED">
+                                <rect key="frame" x="170" y="313" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Diminuição %">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41i-JK-p5J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIM-ig-Z5c">
+                                <rect key="frame" x="170" y="263" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="X é % de Y">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jZ-LB-W1i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvY-3r-bjh">
+                                <rect key="frame" x="16" y="413" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YvY-3r-bjh" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="RHG-mY-fQc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="X mais Y%">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WgC-1d-AuI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEM-OV-l3W">
+                                <rect key="frame" x="16" y="363" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dEM-OV-l3W" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="d28-Ua-p58"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="X é Y% de">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lfr-Fx-OeF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67z-mD-o7o">
+                                <rect key="frame" x="16" y="313" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="67z-mD-o7o" secondAttribute="height" multiplier="67:25" constant="21.439999999999998" id="M2b-5f-MGs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Aumento %">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeQ-bm-RNA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kK-6h-uy3">
+                                <rect key="frame" x="-5" y="203" width="166" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.32827441620263398" blue="0.18688567727763894" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Xf1-Gl-8UU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Inverter">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inverter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6K6-fF-CH1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBG-ma-UpU">
+                                <rect key="frame" x="160" y="203" width="166" height="42"/>
+                                <color key="backgroundColor" red="0.85917771464646464" green="0.0" blue="0.0086360419018541839" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="0uA-nY-9zE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Limpar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="limpar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKJ-2U-7u9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9om-lV-uwa">
+                                <rect key="frame" x="83" y="113" width="221" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwH-pd-zSe">
+                                <rect key="frame" x="16" y="122" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hqZ-ZW-UK2">
+                                <rect key="frame" x="83" y="75" width="221" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrH-iD-t0N">
+                                <rect key="frame" x="16" y="84" width="59" height="21"/>
+                                <color key="tintColor" red="1" green="0.98391969973756332" blue="0.90821921692807428" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JP-E4-cde">
+                                <rect key="frame" x="-5" y="151" width="331" height="53"/>
+                                <color key="backgroundColor" red="0.80277383207070707" green="0.0" blue="0.0080690971533489923" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="8ae-XS-3f9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YvY-3r-bjh" firstAttribute="top" secondItem="dEM-OV-l3W" secondAttribute="bottom" constant="8" id="09s-RQ-7JB"/>
+                            <constraint firstItem="MQW-gr-eED" firstAttribute="height" secondItem="67z-mD-o7o" secondAttribute="height" id="0CI-PL-GiE"/>
+                            <constraint firstItem="hqZ-ZW-UK2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="26F-45-iF9"/>
+                            <constraint firstItem="tdy-Nc-9Ij" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2c8-vO-tZL"/>
+                            <constraint firstItem="VwH-pd-zSe" firstAttribute="top" secondItem="PrH-iD-t0N" secondAttribute="bottom" constant="17" id="2eE-0i-6b0"/>
+                            <constraint firstItem="3JP-E4-cde" firstAttribute="top" secondItem="EHA-fd-GAS" secondAttribute="bottom" id="40y-jI-pds"/>
+                            <constraint firstItem="MQW-gr-eED" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4OV-Sp-47A"/>
+                            <constraint firstItem="hqZ-ZW-UK2" firstAttribute="leading" secondItem="PrH-iD-t0N" secondAttribute="trailing" constant="8" id="68b-dz-kPa"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Za-K5-E8w"/>
+                            <constraint firstItem="UUS-Nl-q81" firstAttribute="top" secondItem="6kK-6h-uy3" secondAttribute="bottom" constant="18" id="7rV-b4-CKx"/>
+                            <constraint firstItem="dEM-OV-l3W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8YQ-gW-2hz"/>
+                            <constraint firstItem="YBG-ma-UpU" firstAttribute="width" secondItem="6kK-6h-uy3" secondAttribute="width" id="8xg-am-Di3"/>
+                            <constraint firstItem="3JP-E4-cde" firstAttribute="top" secondItem="9om-lV-uwa" secondAttribute="bottom" constant="8" id="JSn-uN-VK4"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="top" secondItem="YBG-ma-UpU" secondAttribute="bottom" constant="18" id="L19-o5-Q8A"/>
+                            <constraint firstItem="ybR-GD-4KG" firstAttribute="height" secondItem="YvY-3r-bjh" secondAttribute="height" id="MGL-mQ-eiG"/>
+                            <constraint firstItem="YBG-ma-UpU" firstAttribute="top" secondItem="3JP-E4-cde" secondAttribute="bottom" constant="-1" id="NPa-IR-XLP"/>
+                            <constraint firstItem="67z-mD-o7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NUr-VH-i1U"/>
+                            <constraint firstItem="3JP-E4-cde" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-21" id="Nbb-nn-mdz"/>
+                            <constraint firstItem="VwH-pd-zSe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nnz-FX-BVk"/>
+                            <constraint firstItem="ybR-GD-4KG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ReZ-WM-p0f"/>
+                            <constraint firstItem="ybR-GD-4KG" firstAttribute="top" secondItem="tdy-Nc-9Ij" secondAttribute="bottom" constant="8" id="Ser-Jn-B71"/>
+                            <constraint firstItem="dEM-OV-l3W" firstAttribute="top" secondItem="67z-mD-o7o" secondAttribute="bottom" constant="8" id="Sym-4f-6aP"/>
+                            <constraint firstItem="PrH-iD-t0N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="TK9-yV-OdJ"/>
+                            <constraint firstItem="9om-lV-uwa" firstAttribute="top" secondItem="hqZ-ZW-UK2" secondAttribute="bottom" constant="8" id="TTp-RA-HAT"/>
+                            <constraint firstItem="dEM-OV-l3W" firstAttribute="height" secondItem="tdy-Nc-9Ij" secondAttribute="height" id="VKN-Pr-Az9"/>
+                            <constraint firstItem="6kK-6h-uy3" firstAttribute="top" secondItem="3JP-E4-cde" secondAttribute="bottom" constant="-1" id="Yqt-RJ-7sd"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="width" secondItem="UUS-Nl-q81" secondAttribute="width" id="ZHz-6W-Pij"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHA-fd-GAS" secondAttribute="trailing" constant="-22" id="Zms-hu-Tcu"/>
+                            <constraint firstItem="ybR-GD-4KG" firstAttribute="width" secondItem="YvY-3r-bjh" secondAttribute="width" id="bUY-W4-iUy"/>
+                            <constraint firstItem="EHA-fd-GAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-21" id="buX-EG-Shp"/>
+                            <constraint firstItem="MQW-gr-eED" firstAttribute="top" secondItem="yIM-ig-Z5c" secondAttribute="bottom" constant="8" id="ch6-du-qst"/>
+                            <constraint firstItem="9om-lV-uwa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cl8-zQ-s7Y"/>
+                            <constraint firstItem="9om-lV-uwa" firstAttribute="leading" secondItem="VwH-pd-zSe" secondAttribute="trailing" constant="9" id="dmB-S2-5jA"/>
+                            <constraint firstItem="dEM-OV-l3W" firstAttribute="width" secondItem="tdy-Nc-9Ij" secondAttribute="width" id="e6t-Y4-ZcS"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="width" secondItem="UUS-Nl-q81" secondAttribute="width" id="eAR-GJ-Qoz"/>
+                            <constraint firstItem="hqZ-ZW-UK2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="fKL-KT-seT"/>
+                            <constraint firstItem="YvY-3r-bjh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g1W-RN-pUH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3JP-E4-cde" secondAttribute="trailing" constant="-22" id="g3O-fE-pws"/>
+                            <constraint firstItem="tdy-Nc-9Ij" firstAttribute="leading" secondItem="dEM-OV-l3W" secondAttribute="trailing" constant="20" id="g8e-ab-xgY"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="leading" secondItem="UUS-Nl-q81" secondAttribute="trailing" constant="20" id="htb-qb-nyD"/>
+                            <constraint firstItem="6kK-6h-uy3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-21" id="ivz-HD-0Cv"/>
+                            <constraint firstItem="ybR-GD-4KG" firstAttribute="leading" secondItem="YvY-3r-bjh" secondAttribute="trailing" constant="20" id="jbh-RZ-Zsm"/>
+                            <constraint firstItem="MQW-gr-eED" firstAttribute="width" secondItem="67z-mD-o7o" secondAttribute="width" id="k2h-96-LZb"/>
+                            <constraint firstItem="yIM-ig-Z5c" firstAttribute="height" secondItem="UUS-Nl-q81" secondAttribute="height" id="la0-dH-tkZ"/>
+                            <constraint firstItem="MQW-gr-eED" firstAttribute="leading" secondItem="67z-mD-o7o" secondAttribute="trailing" constant="20" id="pdy-lJ-OoB"/>
+                            <constraint firstItem="tdy-Nc-9Ij" firstAttribute="top" secondItem="MQW-gr-eED" secondAttribute="bottom" constant="8" id="qu3-WO-Wq5"/>
+                            <constraint firstItem="UUS-Nl-q81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYY-fP-EKW"/>
+                            <constraint firstItem="EHA-fd-GAS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tUg-br-xfv"/>
+                            <constraint firstItem="PrH-iD-t0N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="taL-V3-avw"/>
+                            <constraint firstItem="YBG-ma-UpU" firstAttribute="leading" secondItem="6kK-6h-uy3" secondAttribute="trailing" constant="-1" id="uB8-cn-jZI"/>
+                            <constraint firstItem="67z-mD-o7o" firstAttribute="top" secondItem="UUS-Nl-q81" secondAttribute="bottom" constant="8" id="v6I-gK-rjA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YBG-ma-UpU" secondAttribute="trailing" constant="-22" id="w41-oc-Jx8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Porcentagem Total" id="65c-hs-YxA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Prg-pX-s8P">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="compartilhar:" destination="BYZ-38-t0r" id="XJo-aT-ZAt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="botao1" destination="UUS-Nl-q81" id="wHl-Az-cXk"/>
+                        <outlet property="botao2" destination="67z-mD-o7o" id="0CK-Ic-wwJ"/>
+                        <outlet property="botao3" destination="dEM-OV-l3W" id="pEg-Kx-l8P"/>
+                        <outlet property="botao4" destination="YvY-3r-bjh" id="yAC-yg-yko"/>
+                        <outlet property="botao5" destination="yIM-ig-Z5c" id="2tQ-j8-vOp"/>
+                        <outlet property="botao6" destination="MQW-gr-eED" id="J66-n1-3jW"/>
+                        <outlet property="botao7" destination="tdy-Nc-9Ij" id="Hjt-Jg-FAG"/>
+                        <outlet property="botao8" destination="ybR-GD-4KG" id="SyM-Vh-DnY"/>
+                        <outlet property="campo1" destination="hqZ-ZW-UK2" id="jRE-py-4gn"/>
+                        <outlet property="campo2" destination="9om-lV-uwa" id="16k-jo-FFU"/>
+                        <outlet property="resultado" destination="3JP-E4-cde" id="Kc4-bl-SA1"/>
+                        <outlet property="valorx" destination="PrH-iD-t0N" id="hVQ-4f-tnA"/>
+                        <outlet property="valory" destination="VwH-pd-zSe" id="dGn-Rw-LhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b99-kG-hBQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bo6-WQ-24a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hO8-K8-y4f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="35V-IM-VXn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGz-lz-SwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="975"/>
+        </scene>
+    </scenes>
+</document>
